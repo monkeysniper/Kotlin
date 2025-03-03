@@ -41,7 +41,6 @@ class SecondActivity : AppCompatActivity() {
                 val intent = Intent(this@SecondActivity, ThirdActivity::class.java)
                 startActivity(intent)
 
-                // Скрываем элементы интерфейса после успешного входа
                 emailEditText?.visibility = View.GONE
                 passwordEditText?.visibility = View.GONE
                 logInBtn?.visibility = View.GONE
@@ -53,7 +52,6 @@ class SecondActivity : AppCompatActivity() {
                 ).show()
             }
 
-            // Очищаем поля ввода
             emailEditText?.setText("")
             passwordEditText?.setText("")
         }

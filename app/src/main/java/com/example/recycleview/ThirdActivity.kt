@@ -68,14 +68,12 @@ class ThirdActivity : AppCompatActivity() {
             )
         }
 
-        // Установка адаптеров
         adapter = Adapter(list as ArrayList<Model>)
         modelAdapter = ModelAdapter(list1!!)
 
         recyclerView?.adapter = adapter
         recyclerView1?.adapter = modelAdapter
 
-        // Поиск по строке
         binding?.searchBar?.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
 
